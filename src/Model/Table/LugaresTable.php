@@ -31,7 +31,7 @@ class LugaresTable extends Table
         parent::initialize($config);
 
         $this->setTable('lugares');
-        $this->setDisplayField('id');
+        $this->setDisplayField('nombre');
         $this->setPrimaryKey('id');
     }
 

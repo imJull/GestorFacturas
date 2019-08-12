@@ -34,7 +34,7 @@ class UsersTable extends Table
         parent::initialize($config);
 
         $this->setTable('users');
-        $this->setDisplayField('id');
+        $this->setDisplayField('nombre'); //aNTES CAMPO DE id
         $this->setPrimaryKey('id');
 
         $this->hasMany('Facturas', [

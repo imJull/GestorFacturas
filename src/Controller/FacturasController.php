@@ -60,7 +60,7 @@ class FacturasController extends AppController
             }
             $this->Flash->error(__('La Factura no se ha guardado. Inténtelo de nuevo.'));
         }
-        $users = $this->Facturas->Users->find('list', ['limit' => 200]);
+        $users = $this->Facturas->Users->find('list');
         $clientes = $this->Facturas->Clientes->find('list', ['limit' => 200]);
         $lugares = $this->Facturas->Lugares->find('list', ['limit' => 200]);
         $etiquetas = $this->Facturas->Etiquetas->find('list', ['limit' => 200]);
@@ -88,7 +88,7 @@ class FacturasController extends AppController
             }
             $this->Flash->error(__('La Factura no se ha guardado. Inténtelo de nuevo.'));
         }
-        $users = $this->Facturas->Users->find('list', ['limit' => 200]);
+        $users = $this->Facturas->Users->find('list', ['limit' => 200]) ;
         $clientes = $this->Facturas->Clientes->find('list', ['limit' => 200]);
         $lugares = $this->Facturas->Lugares->find('list', ['limit' => 200]);
         $etiquetas = $this->Facturas->Etiquetas->find('list', ['limit' => 200]);

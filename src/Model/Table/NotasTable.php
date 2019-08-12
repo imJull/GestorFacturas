@@ -34,7 +34,7 @@ class NotasTable extends Table
         parent::initialize($config);
 
         $this->setTable('notas');
-        $this->setDisplayField('id');
+        $this->setDisplayField('titulo');
         $this->setPrimaryKey('id');
 
         $this->belongsTo('Facturas', [

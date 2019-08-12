@@ -33,7 +33,7 @@ class EtiquetasTable extends Table
         parent::initialize($config);
 
         $this->setTable('etiquetas');
-        $this->setDisplayField('id');
+        $this->setDisplayField('titulo');
         $this->setPrimaryKey('id');
 
         $this->belongsToMany('Facturas', [
@@ -71,5 +71,5 @@ class EtiquetasTable extends Table
         return $validator;
     }
 
-    
+
 }

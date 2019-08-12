@@ -37,7 +37,7 @@ class FacturasTable extends Table
         parent::initialize($config);
 
         $this->setTable('facturas');
-        $this->setDisplayField('id');
+        $this->setDisplayField('titulo');
         $this->setPrimaryKey('id');
 
         $this->belongsTo('Users', [

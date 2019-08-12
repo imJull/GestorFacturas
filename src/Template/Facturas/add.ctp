@@ -19,7 +19,7 @@
             echo $this->Form->control('titulo');
             echo $this->Form->control('descripcion');
             echo $this->Form->control('productos');
-            
+
             echo $this->Form->control('creado', ['empty' => true]);
 
             echo $this->Form->control('etiquetas._ids', ['options' => $etiquetas]);

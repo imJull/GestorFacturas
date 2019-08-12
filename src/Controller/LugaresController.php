@@ -51,11 +51,11 @@ class LugaresController extends AppController
         if ($this->request->is('post')) {
             $lugare = $this->Lugares->patchEntity($lugare, $this->request->getData());
             if ($this->Lugares->save($lugare)) {
-                $this->Flash->success(__('The lugare has been saved.'));
+                $this->Flash->success(__('Lugar Guardado.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The lugare could not be saved. Please, try again.'));
+            $this->Flash->error(__('No se ha podido guardar el lugar. Inténtelo de nuevo.'));
         }
         $this->set(compact('lugare'));
     }
@@ -75,11 +75,11 @@ class LugaresController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $lugare = $this->Lugares->patchEntity($lugare, $this->request->getData());
             if ($this->Lugares->save($lugare)) {
-                $this->Flash->success(__('The lugare has been saved.'));
+                $this->Flash->success(__('Lugar Guardado.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The lugare could not be saved. Please, try again.'));
+            $this->Flash->error(__('No se ha podido guardar el lugar. Inténtelo de nuevo..'));
         }
         $this->set(compact('lugare'));
     }
@@ -96,9 +96,9 @@ class LugaresController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $lugare = $this->Lugares->get($id);
         if ($this->Lugares->delete($lugare)) {
-            $this->Flash->success(__('The lugare has been deleted.'));
+            $this->Flash->success(__('Lugar GUardado.'));
         } else {
-            $this->Flash->error(__('The lugare could not be deleted. Please, try again.'));
+            $this->Flash->error(__('No se ha podido eliminar el lugar. Inténtelo de nuevo.'));
         }
 
         return $this->redirect(['action' => 'index']);

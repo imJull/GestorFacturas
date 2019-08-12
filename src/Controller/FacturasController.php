@@ -54,11 +54,11 @@ class FacturasController extends AppController
         if ($this->request->is('post')) {
             $factura = $this->Facturas->patchEntity($factura, $this->request->getData());
             if ($this->Facturas->save($factura)) {
-                $this->Flash->success(__('The factura has been saved.'));
+                $this->Flash->success(__('Factura Guardada.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The factura could not be saved. Please, try again.'));
+            $this->Flash->error(__('La Factura no se ha guardado. Inténtelo de nuevo.'));
         }
         $users = $this->Facturas->Users->find('list', ['limit' => 200]);
         $clientes = $this->Facturas->Clientes->find('list', ['limit' => 200]);
@@ -82,11 +82,11 @@ class FacturasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $factura = $this->Facturas->patchEntity($factura, $this->request->getData());
             if ($this->Facturas->save($factura)) {
-                $this->Flash->success(__('The factura has been saved.'));
+                $this->Flash->success(__('Factura Guardada.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The factura could not be saved. Please, try again.'));
+            $this->Flash->error(__('La Factura no se ha guardado. Inténtelo de nuevo.'));
         }
         $users = $this->Facturas->Users->find('list', ['limit' => 200]);
         $clientes = $this->Facturas->Clientes->find('list', ['limit' => 200]);
@@ -107,9 +107,9 @@ class FacturasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $factura = $this->Facturas->get($id);
         if ($this->Facturas->delete($factura)) {
-            $this->Flash->success(__('The factura has been deleted.'));
+            $this->Flash->success(__('Factura Eliminada.'));
         } else {
-            $this->Flash->error(__('The factura could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La Factura no se ha eliminado. Inténtelo de nuevo.'));
         }
 
         return $this->redirect(['action' => 'index']);

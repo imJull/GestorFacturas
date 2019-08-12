@@ -53,11 +53,11 @@
         <?php if (!empty($cliente->facturas)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
+                <th scope="col"><?= __('Titulo') ?></th>
                 <th scope="col"><?= __('Id') ?></th>
                 <th scope="col"><?= __('User Id') ?></th>
                 <th scope="col"><?= __('Cliente Id') ?></th>
                 <th scope="col"><?= __('Lugar Id') ?></th>
-                <th scope="col"><?= __('Titulo') ?></th>
                 <th scope="col"><?= __('Descripcion') ?></th>
                 <th scope="col"><?= __('Productos') ?></th>
                 <th scope="col"><?= __('Lanzamiento') ?></th>
@@ -67,11 +67,11 @@
             </tr>
             <?php foreach ($cliente->facturas as $facturas): ?>
             <tr>
+                <td><?= h($facturas->titulo) ?></td>
                 <td><?= h($facturas->id) ?></td>
                 <td><?= h($facturas->user_id) ?></td>
                 <td><?= h($facturas->cliente_id) ?></td>
                 <td><?= h($facturas->lugar_id) ?></td>
-                <td><?= h($facturas->titulo) ?></td>
                 <td><?= h($facturas->descripcion) ?></td>
                 <td><?= h($facturas->productos) ?></td>
                 <td><?= h($facturas->lanzamiento) ?></td>

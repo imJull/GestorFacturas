@@ -11,7 +11,7 @@
 <div class="clientes form large-9 medium-8 columns content">
     <?= $this->Form->create($cliente) ?>
     <fieldset>
-        <legend><?= __('Edit Cliente') ?></legend>
+        <legend><?= __('Editar Cliente') ?></legend>
         <?php
             echo $this->Form->control('compania');
             echo $this->Form->control('nombre');
@@ -20,9 +20,9 @@
             echo $this->Form->control('email');
             echo $this->Form->control('telefono');
             echo $this->Form->control('creado', ['empty' => true]);
-            echo $this->Form->control('modificado', ['empty' => true]);
+            //Espacio de modificado
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('GUARDAR')) ?>
     <?= $this->Form->end() ?>
 </div>

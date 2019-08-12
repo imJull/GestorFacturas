@@ -11,13 +11,13 @@
 <div class="lugares form large-9 medium-8 columns content">
     <?= $this->Form->create($lugare) ?>
     <fieldset>
-        <legend><?= __('Add Lugare') ?></legend>
+        <legend><?= __('Añadir Lugar') ?></legend>
         <?php
             echo $this->Form->control('nombre');
             echo $this->Form->control('creado', ['empty' => true]);
             echo $this->Form->control('modificado', ['empty' => true]);
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('AÑADIR')) ?>
     <?= $this->Form->end() ?>
 </div>

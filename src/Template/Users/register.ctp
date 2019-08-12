@@ -12,7 +12,7 @@
         echo $this->Form->control('email');
         echo $this->Form->control('password');
         echo $this->Form->control('creado', ['empty' => true]);
-        echo $this->Form->control('modificado', ['empty' => true]);
+        
     ?>
       <?= $this->Form->submit('Registrarse', array('class' => 'button')); ?>
     <?= $this->Form->end(); ?>

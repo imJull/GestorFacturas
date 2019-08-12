@@ -11,7 +11,7 @@
 <div class="etiquetas form large-9 medium-8 columns content">
     <?= $this->Form->create($etiqueta) ?>
     <fieldset>
-        <legend><?= __('Add Etiqueta') ?></legend>
+        <legend><?= __('Añadir Etiqueta') ?></legend>
         <?php
             echo $this->Form->control('titulo');
             echo $this->Form->control('creado', ['empty' => true]);
@@ -19,6 +19,6 @@
             echo $this->Form->control('facturas._ids', ['options' => $facturas]);
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('AÑADIR')) ?>
     <?= $this->Form->end() ?>
 </div>

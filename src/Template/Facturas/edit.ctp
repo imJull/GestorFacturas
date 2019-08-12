@@ -1,4 +1,4 @@
-<?php
+?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Factura $factura
@@ -11,7 +11,7 @@
 <div class="facturas form large-9 medium-8 columns content">
     <?= $this->Form->create($factura) ?>
     <fieldset>
-        <legend><?= __('Edit Factura') ?></legend>
+        <legend><?= __('Editar Factura') ?></legend>
         <?php
             echo $this->Form->control('user_id', ['options' => $users]);
             echo $this->Form->control('cliente_id', ['options' => $clientes]);
@@ -19,12 +19,11 @@
             echo $this->Form->control('titulo');
             echo $this->Form->control('descripcion');
             echo $this->Form->control('productos');
-            echo $this->Form->control('lanzamiento', ['empty' => true]);
-            echo $this->Form->control('creado', ['empty' => true]);
+
             echo $this->Form->control('modificado', ['empty' => true]);
             echo $this->Form->control('etiquetas._ids', ['options' => $etiquetas]);
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('GUARDAR')) ?>
     <?= $this->Form->end() ?>
 </div>

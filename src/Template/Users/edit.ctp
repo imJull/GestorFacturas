@@ -10,17 +10,16 @@
 <div class="users form large-9 medium-8 columns content">
     <?= $this->Form->create($user) ?>
     <fieldset>
-        <legend><?= __('Edit User') ?></legend>
+        <legend><?= __('Editar Usuario') ?></legend>
         <?php
             echo $this->Form->control('nombre');
             echo $this->Form->control('apellido');
             echo $this->Form->control('bio');
             echo $this->Form->control('email');
             echo $this->Form->control('password');
-            echo $this->Form->control('creado', ['empty' => true]);
             echo $this->Form->control('modificado', ['empty' => true]);
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('GUARDAR')) ?>
     <?= $this->Form->end() ?>
 </div>

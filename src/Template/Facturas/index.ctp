@@ -39,7 +39,7 @@
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $factura->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $factura->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $factura->id], ['confirm' => __('Are you sure you want to delete # {0}?', $factura->id)]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $factura->id], ['confirm' => __('Desea eliminar # {0}?', $factura->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
